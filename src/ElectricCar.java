@@ -10,8 +10,9 @@ public class ElectricCar extends Car {
         this.whPrKm = whPrKm;
     }
 
-    public abstract double calcTax(){
-        float kmPrL = 100 / (whPrKm / 91.25);
+    @Override
+    public double calcTax(){
+        double kmPrL = 100 / (whPrKm / 91.25);
         if(kmPrL > 20 && kmPrL <= 50){
             return 330.00;
         }else if(kmPrL > 15 && kmPrL <= 20){

@@ -1,4 +1,4 @@
-public class Car {
+public abstract class Car {
     private int regNum;
     private String model;
     private int generation;
@@ -11,9 +11,7 @@ public class Car {
         this.doorAmount = doorAmount;
     }
 
-    public abstract double calcTax(){
-        return 0;
-    }
+    public abstract double calcTax();
 
     public int getRegNum() {
         return regNum;

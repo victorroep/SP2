@@ -8,7 +8,8 @@ public class PetrolCar extends Car {
         this.kmPrL = kmPrL;
     }
 
-    public abstract double calcTax(){
+    @Override
+    public double calcTax(){
         if(kmPrL > 20 && kmPrL <= 50){
             return 330.00;
         }else if(kmPrL > 15 && kmPrL <= 20){

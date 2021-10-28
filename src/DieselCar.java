@@ -8,7 +8,8 @@ public class DieselCar extends Car {
         this.kmPrL = kmPrL;
     }
 
-    public abstract double calcTax(){
+    @Override
+    public double calcTax(){
         int particleTax = hasParticleFilter ? 1000 : 0;
         if(kmPrL > 20 && kmPrL <= 50){
             return 330.00 + 130.00 + particleTax;
