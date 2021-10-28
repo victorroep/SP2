@@ -38,4 +38,8 @@ public class PetrolCar extends Car {
     public void setKmPrL(int kmPrL) {
         this.kmPrL = kmPrL;
     }
+
+
+
+
 }

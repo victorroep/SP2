@@ -44,4 +44,14 @@ public abstract class Car {
     public void setDoorAmount(int doorAmount) {
         this.doorAmount = doorAmount;
     }
+
+    @java.lang.Override
+    public java.lang.String toString() {
+        return "Car{" +
+                "regNum=" + regNum +
+                ", model='" + model + '\'' +
+                ", generation=" + generation +
+                ", doorAmount=" + doorAmount +
+                '}';
+    }
 }
